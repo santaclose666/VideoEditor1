@@ -1,0 +1,33 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Jua-Regular.ttf",
+      "sha1": "9122d54d461d57735caeeb843b9961a96225468b"
+    },
+    {
+      "path": "src/assets/fonts/Lobster-Regular.ttf",
+      "sha1": "120c751cd7a77174037c2409ab883ef7efc5edbb"
+    },
+    {
+      "path": "src/assets/fonts/Oswald.ttf",
+      "sha1": "83708d011b4d9bab0f4e275cf22b588558037a79"
+    },
+    {
+      "path": "src/assets/fonts/Pacifico-Regular.ttf",
+      "sha1": "baca1fca7fe74b61cb33aa0da48ec1a3a77bcf49"
+    },
+    {
+      "path": "src/assets/fonts/Quicksand.ttf",
+      "sha1": "17fb514f853cfeb7176a384fa29358e9c4b76c39"
+    },
+    {
+      "path": "src/assets/fonts/Satisfy-Regular.ttf",
+      "sha1": "fd2f096e9d0cd82b9f8e191d7f73167176d0f729"
+    },
+    {
+      "path": "src/assets/fonts/SedanSC-Regular.ttf",
+      "sha1": "a9c9a93118d23c8227da24bea289ba28db9565b9"
+    }
+  ]
+}

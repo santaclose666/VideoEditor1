@@ -36,13 +36,27 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app wanna to use your gallery?</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Jua-Regular.ttf</string>
+		<string>Pacifico-Regular.ttf</string>
+		<string>SedanSC-Regular.ttf</string>
+		<string>Oswald.ttf</string>
+		<string>Quicksand.ttf</string>
+		<string>Lobster-Regular.ttf</string>
+		<string>Satisfy-Regular.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
