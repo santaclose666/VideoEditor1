@@ -15,6 +15,9 @@ PODS:
     - React-Core
   - fmt (6.2.1)
   - glog (0.3.5)
+  - PromisesObjC (2.4.0)
+  - PromisesSwift (2.4.0):
+    - PromisesObjC (= 2.4.0)
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -242,18 +245,23 @@ PODS:
     - React-Core
   - react-native-document-picker (9.2.0):
     - React-Core
+  - react-native-get-random-values (1.11.0):
+    - React-Core
   - react-native-safe-area-context (4.10.1):
     - React-Core
   - react-native-slider (4.5.2):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
-  - react-native-video (5.2.1):
+  - react-native-video (6.0.0-beta.8):
+    - RCT-Folly (= 2021.07.22.00)
     - React-Core
-    - react-native-video/Video (= 5.2.1)
+    - react-native-video/Video (= 6.0.0-beta.8)
   - react-native-video-duration (0.1.2):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
-  - react-native-video/Video (5.2.1):
+  - react-native-video/Video (6.0.0-beta.8):
+    - PromisesSwift
+    - RCT-Folly (= 2021.07.22.00)
     - React-Core
   - React-perflogger (0.71.19)
   - React-RCTActionSheet (0.71.19):
@@ -340,18 +348,18 @@ PODS:
     - React
   - RNFS (2.20.0):
     - React-Core
-  - RNGestureHandler (2.16.1):
+  - RNGestureHandler (2.16.2):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
-  - RNImageCropPicker (0.40.3):
+  - RNImageCropPicker (0.41.1):
     - React-Core
     - React-RCTImage
-    - RNImageCropPicker/QBImagePickerController (= 0.40.3)
-    - TOCropViewController
-  - RNImageCropPicker/QBImagePickerController (0.40.3):
+    - RNImageCropPicker/QBImagePickerController (= 0.41.1)
+    - TOCropViewController (~> 2.7.4)
+  - RNImageCropPicker/QBImagePickerController (0.41.1):
     - React-Core
     - React-RCTImage
-    - TOCropViewController
+    - TOCropViewController (~> 2.7.4)
   - RNReanimated (2.17.0):
     - DoubleConversion
     - FBLazyVector
@@ -385,7 +393,7 @@ PODS:
     - React-RCTImage
   - RNSVG (15.2.0):
     - React-Core
-  - TOCropViewController (2.7.2)
+  - TOCropViewController (2.7.4)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -412,6 +420,7 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - "react-native-cameraroll (from `../node_modules/@react-native-camera-roll/camera-roll`)"
   - react-native-document-picker (from `../node_modules/react-native-document-picker`)
+  - react-native-get-random-values (from `../node_modules/react-native-get-random-values`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - "react-native-slider (from `../node_modules/@react-native-community/slider`)"
   - react-native-video (from `../node_modules/react-native-video`)
@@ -442,6 +451,8 @@ SPEC REPOS:
   trunk:
     - ffmpeg-kit-ios-full-gpl
     - fmt
+    - PromisesObjC
+    - PromisesSwift
     - TOCropViewController
 
 EXTERNAL SOURCES:
@@ -489,6 +500,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-camera-roll/camera-roll"
   react-native-document-picker:
     :path: "../node_modules/react-native-document-picker"
+  react-native-get-random-values:
+    :path: "../node_modules/react-native-get-random-values"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   react-native-slider:
@@ -549,6 +562,8 @@ SPEC CHECKSUMS:
   ffmpeg-kit-react-native: 3cea88c9c5cfad62e1465279ea7d800dfbba3b00
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
+  PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
+  PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: 79b5f823c2b4b865451ba9ddb33c676786760ea8
   RCTTypeSafety: 4f6d5414413d8848923ccd448c4cef4b6ffcd403
@@ -565,9 +580,10 @@ SPEC CHECKSUMS:
   React-logger: 70ddbe0e07179c8adb94c4bffc36c6abc952d3d4
   react-native-cameraroll: 1f5635304fdd999a73c85e916580d4f47a959c25
   react-native-document-picker: 2b3efb60622b7be891b8d0e0e5424632150e0c94
+  react-native-get-random-values: 21325b2244dfa6b58878f51f9aa42821e7ba3d06
   react-native-safe-area-context: dcab599c527c2d7de2d76507a523d20a0b83823d
   react-native-slider: 593253eb5fbc6ea519290e812bd477fc6abafd5a
-  react-native-video: c26780b224543c62d5e1b2a7244a5cd1b50e8253
+  react-native-video: 3a27f78ff6552027d9b6f1985e2f4dfca39c76f1
   react-native-video-duration: e3a044038cdecd89019eb0c4e787812a8f2ea6a2
   React-perflogger: 0ba097528e325435aca94b32b5330f58f6acb6fb
   React-RCTActionSheet: 805b3a83f3dd7ae5a1213ea9df0ed748eeb74b85
@@ -584,14 +600,14 @@ SPEC CHECKSUMS:
   ReactCommon: 9a286942d05a50129b6712e19c2c6bbbd0afb014
   RealmJS: 3e6010ae878227830e947f40f996e13ccab4c8ba
   RNFS: 4ac0f0ea233904cb798630b3c077808c06931688
-  RNGestureHandler: 83e5f2116076f0402da654c0541f7fca20d77775
-  RNImageCropPicker: e7ab6fb43d2fc3e84651e786ef4a080d63b0ed3d
+  RNGestureHandler: d678f94a8f74de70ce3d9f5d23eb0f97b686e943
+  RNImageCropPicker: 601604515fd6fbba318147b0a56aed0be9379415
   RNReanimated: f186e85d9f28c9383d05ca39e11dd194f59093ec
   RNScreens: 93ae3be2f119d955620f9bbb39ad372adb53b7a9
   RNSVG: 43b64ed39c14ce830d840903774154ca0c1f27ec
-  TOCropViewController: bf38459e9da6efe414de22087ebd5c530640f4bd
+  TOCropViewController: 80b8985ad794298fb69d3341de183f33d1853654
   Yoga: d4f5b037672e6b68ba484c7cf7fe6790122df792
 
-PODFILE CHECKSUM: bb4aa8abb4dcb57927aed25b5aa94d142e772cde
+PODFILE CHECKSUM: d87dd9dd61e1319d332780901aa395a9a0b7cf22
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.14.3

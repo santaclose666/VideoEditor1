@@ -26,19 +26,11 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>localhost</key>
-			<dict>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
-		</dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app wanna to use your gallery?</string>
+	<string>Application needs access to you Photo library to help you pick the video</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Jua-Regular.ttf</string>

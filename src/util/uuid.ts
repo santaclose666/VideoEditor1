@@ -1,5 +1,5 @@
-import uuid from 'react-native-uuid';
+import {v4 as uuidv4} from 'uuid';
 
 export const generateId = () => {
-  return uuid.v4();
+  return uuidv4();
 };

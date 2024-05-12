@@ -17,6 +17,7 @@
 		6C3FA93F637C4C60B7A95110 /* Quicksand.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDE3E832B2D34F6B9E187BF5 /* Quicksand.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-lasrn036-lasrn036Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-lasrn036-lasrn036Tests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		84F8C7522BF0D4B700B1C4A6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 84F8C7512BF0D4B600B1C4A6 /* PrivacyInfo.xcprivacy */; };
 		960C5415DB2840168AACECE5 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53A08CAF778545ABB002C2E4 /* Lobster-Regular.ttf */; };
 		9915C789CDC24413BBF039F9 /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED1048A906E94C10BEFCA128 /* Satisfy-Regular.ttf */; };
 		DD069A9E46F24CB080E1813E /* SedanSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A15BC0FB1DE4F828A29905E /* SedanSC-Regular.ttf */; };
@@ -46,19 +47,19 @@
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-lasrn036-lasrn036Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lasrn036-lasrn036Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D99A52C39A4D77AB0269C6 /* Jua-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jua-Regular.ttf"; path = "../src/assets/fonts/Jua-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-lasrn036.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lasrn036.debug.xcconfig"; path = "Target Support Files/Pods-lasrn036/Pods-lasrn036.debug.xcconfig"; sourceTree = "<group>"; };
-		53A08CAF778545ABB002C2E4 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lobster-Regular.ttf"; path = "../src/assets/fonts/Lobster-Regular.ttf"; sourceTree = "<group>"; };
+		53A08CAF778545ABB002C2E4 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lobster-Regular.ttf"; path = "../src/assets/fonts/Lobster-Regular.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-lasrn036.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lasrn036.release.xcconfig"; path = "Target Support Files/Pods-lasrn036/Pods-lasrn036.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-lasrn036-lasrn036Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lasrn036-lasrn036Tests.debug.xcconfig"; path = "Target Support Files/Pods-lasrn036-lasrn036Tests/Pods-lasrn036-lasrn036Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-lasrn036.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lasrn036.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = lasrn036/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		820D0BE5EB77480CA83852D8 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pacifico-Regular.ttf"; path = "../src/assets/fonts/Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		84F8C7512BF0D4B600B1C4A6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-lasrn036-lasrn036Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lasrn036-lasrn036Tests.release.xcconfig"; path = "Target Support Files/Pods-lasrn036-lasrn036Tests/Pods-lasrn036-lasrn036Tests.release.xcconfig"; sourceTree = "<group>"; };
-		967914B9B1AE4FDAA743754B /* Oswald.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Oswald.ttf; path = ../src/assets/fonts/Oswald.ttf; sourceTree = "<group>"; };
+		967914B9B1AE4FDAA743754B /* Oswald.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Oswald.ttf; path = ../src/assets/fonts/Oswald.ttf; sourceTree = "<group>"; };
 		9A15BC0FB1DE4F828A29905E /* SedanSC-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SedanSC-Regular.ttf"; path = "../src/assets/fonts/SedanSC-Regular.ttf"; sourceTree = "<group>"; };
-		CD42C8902BDBCB100036610F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = lasrn036/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		ED1048A906E94C10BEFCA128 /* Satisfy-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Satisfy-Regular.ttf"; path = "../src/assets/fonts/Satisfy-Regular.ttf"; sourceTree = "<group>"; };
+		ED1048A906E94C10BEFCA128 /* Satisfy-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satisfy-Regular.ttf"; path = "../src/assets/fonts/Satisfy-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		EDE3E832B2D34F6B9E187BF5 /* Quicksand.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Quicksand.ttf; path = ../src/assets/fonts/Quicksand.ttf; sourceTree = "<group>"; };
+		EDE3E832B2D34F6B9E187BF5 /* Quicksand.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Quicksand.ttf; path = ../src/assets/fonts/Quicksand.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +102,13 @@
 		13B07FAE1A68108700A75B9A /* lasrn036 */ = {
 			isa = PBXGroup;
 			children = (
-				CD42C8902BDBCB100036610F /* PrivacyInfo.xcprivacy */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				84F8C7512BF0D4B600B1C4A6 /* PrivacyInfo.xcprivacy */,
 			);
 			name = lasrn036;
 			sourceTree = "<group>";
@@ -281,6 +282,7 @@
 				DDEA0ACB60C24766AF3557BC /* Oswald.ttf in Resources */,
 				6C3FA93F637C4C60B7A95110 /* Quicksand.ttf in Resources */,
 				960C5415DB2840168AACECE5 /* Lobster-Regular.ttf in Resources */,
+				84F8C7522BF0D4B700B1C4A6 /* PrivacyInfo.xcprivacy in Resources */,
 				9915C789CDC24413BBF039F9 /* Satisfy-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
