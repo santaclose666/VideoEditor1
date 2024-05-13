@@ -2,7 +2,7 @@ type textStickerType = 'text' | 'sticker';
 
 export interface MediaProps {
   id?: string;
-  uri: string;
+  name: string;
   minutes: string;
   seconds: string;
   timeCreate: number;

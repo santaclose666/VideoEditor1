@@ -18,7 +18,7 @@ import {MediaEdited} from '../../database/models';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {handleItemIntoVideo} from '../../util/ffmpeg';
 import {generateThumbnail} from '../../util/video';
-import {videoStickerPath} from '../../constants/orther';
+import {videoPickerPath, videoStickerPath} from '../../constants/orther';
 import {getTimeStamp} from '../../util/time';
 import {generateId} from '../../util/uuid';
 import LoadingCustom from '../../components/LoadingCustom';
@@ -32,7 +32,8 @@ interface VideoEditorProps {
 const VideoEditor: React.FC<VideoEditorProps> = ({navigation, route}) => {
   const data: MediaProps = route.params;
 
-  const {uri, seconds, minutes} = data;
+  const {name, seconds, minutes} = data;
+  const url = videoPickerPath + name;
 
   const realm = useRealm();
   const {top} = useSafeAreaInsets();
@@ -87,21 +88,21 @@ const VideoEditor: React.FC<VideoEditorProps> = ({navigation, route}) => {
     try {
       const currVidSize = videoPlayerRef.current?.getNaturalVideoSize();
       const videoName = await handleItemIntoVideo(
-        uri,
+        url,
         pickerList,
         name,
         currVidSize,
       );
 
-      const url = videoStickerPath + videoName;
+      const uri = videoStickerPath + videoName;
       const thumbnail = await generateThumbnail(
-        url,
+        uri,
         Number(minutes) > 10 ? 10 : Math.floor(Number(seconds) * 0.1),
       );
 
       const videoEdited: MediaProps = {
         id: generateId(),
-        uri: videoName,
+        name: '/' + videoName,
         minutes: minutes,
         seconds: seconds,
         thumbnail,
@@ -220,7 +221,7 @@ const VideoEditor: React.FC<VideoEditorProps> = ({navigation, route}) => {
 
       <VideoPlayer
         ref={videoPlayerRef}
-        uri={uri}
+        uri={url}
         pickerList={pickerList}
         isHideRemoveItem={actionState === 'mp4export'}
         onRemovePicker={handleRemovePicker}

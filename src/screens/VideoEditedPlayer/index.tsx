@@ -9,7 +9,8 @@ import {MediaProps} from '../../types';
 
 const VideoEditedPlayer = ({navigation, route}: any) => {
   const data: MediaProps = route.params;
-  const {uri} = data;
+  const {name} = data;
+  const uri = videoStickerPath + name;
 
   const realm = useRealm();
 
@@ -26,7 +27,10 @@ const VideoEditedPlayer = ({navigation, route}: any) => {
   };
 
   const handleShare = () => {
-    Share.share({message: 'Share my edited video', url: uri});
+    Share.share({
+      message: 'Share my edited video',
+      url: uri,
+    });
   };
 
   const handleRemove = () => {
@@ -44,7 +48,7 @@ const VideoEditedPlayer = ({navigation, route}: any) => {
       />
 
       <VideoPlayer
-        uri={videoStickerPath + uri}
+        uri={uri}
         progressStyle={styles.transparentBg}
         controlStyle={styles.transparentBg}
         controlContainerStyle={{

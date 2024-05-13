@@ -1,7 +1,14 @@
-import {Pressable, StyleSheet, View, FlatList, Image} from 'react-native';
-import React, {useState, useEffect} from 'react';
+import {
+  Pressable,
+  StyleSheet,
+  View,
+  FlatList,
+  Image,
+  ScrollView,
+} from 'react-native';
+import React, {useEffect, useState} from 'react';
 import {Gallery, LayoutL, File} from '../../constants/svg';
-import {base64Img, fontsPath, width} from '../../constants/orther';
+import {base64Img, videoPickerPath, width} from '../../constants/orther';
 import TextCustom from '../../components/TextCustom';
 import colors from '../../constants/colors';
 import ImagePicker from 'react-native-image-crop-picker';
@@ -38,8 +45,30 @@ const Home = ({navigation}: HomeProps) => {
 
   const [isUploadTab, setIsUploadTab] = useState(true);
 
+  useEffect(() => {
+    createPickerFolerIfNotExist();
+  }, []);
+
   const handleChangeTab = (state: boolean) => {
     setIsUploadTab(state);
+  };
+
+  const createPickerFolerIfNotExist = async () => {
+    const isExist = await RNFS.exists(videoPickerPath);
+
+    if (isExist) {
+      return;
+    }
+
+    await RNFS.mkdir(videoPickerPath);
+  };
+
+  const copyVideoToFolder = async (uri: string, name: string) => {
+    try {
+      await RNFS.copyFile(uri, videoPickerPath + '/' + name);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const createMediaPicker = (data: MediaProps[]) => {
@@ -69,13 +98,14 @@ const Home = ({navigation}: HomeProps) => {
     let allVid: MediaProps[] = [];
 
     for (let item of data) {
-      const {duration, path} = item;
+      const {duration, path, filename} = item;
 
+      await copyVideoToFolder(path, filename);
       const {minutes, seconds, thumbnail} = await getVidObj(path, duration);
 
       allVid.push({
         id: generateId(),
-        uri: path,
+        name: '/' + filename,
         minutes,
         seconds,
         timeCreated: getTimeStamp(),
@@ -95,8 +125,9 @@ const Home = ({navigation}: HomeProps) => {
 
     const allVid: MediaProps[] = [];
     for (let item of data) {
-      const {fileCopyUri} = item;
+      const {fileCopyUri, name} = item;
 
+      await copyVideoToFolder(fileCopyUri, name);
       const duration = await getVidDuration(fileCopyUri);
 
       const {minutes, seconds, thumbnail} = await getVidObj(
@@ -106,7 +137,7 @@ const Home = ({navigation}: HomeProps) => {
 
       allVid.push({
         id: generateId(),
-        uri: fileCopyUri,
+        name: '/' + name,
         minutes,
         seconds,
         timeCreated: getTimeStamp(),
@@ -144,7 +175,7 @@ const Home = ({navigation}: HomeProps) => {
   };
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View>
         <LayoutL width={bannerW} height={bannerH} />
 
@@ -212,6 +243,7 @@ const Home = ({navigation}: HomeProps) => {
         numColumns={columns}
         showsVerticalScrollIndicator={false}
         columnWrapperStyle={{marginBottom: 10}}
+        scrollEnabled={false}
         ListEmptyComponent={() => (
           <TextCustom
             text={'No Media found'}
@@ -221,7 +253,7 @@ const Home = ({navigation}: HomeProps) => {
           />
         )}
       />
-    </View>
+    </ScrollView>
   );
 };
 

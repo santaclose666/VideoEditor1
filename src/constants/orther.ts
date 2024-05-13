@@ -8,7 +8,7 @@ const vidH = Math.floor(width * (9 / 16));
 const iconSize = Math.floor(vidW * 0.1);
 const fontSize = Math.floor(vidW * 0.04);
 const videoStickerPath = RNFS.DocumentDirectoryPath + '/stickerVideo';
-const fontsPath = RNFS.DocumentDirectoryPath + '/fonts';
+const videoPickerPath = RNFS.DocumentDirectoryPath + '/videoPicker';
 
 export {
   width,
@@ -17,7 +17,7 @@ export {
   vidW,
   vidH,
   videoStickerPath,
-  fontsPath,
+  videoPickerPath,
   iconSize,
   fontSize,
 };

@@ -7,7 +7,7 @@ export class MediaPicker extends Realm.Object<MediaPicker> {
     name: 'MediaPicker',
     properties: {
       id: {type: 'string', default: generateId()},
-      uri: 'string',
+      name: 'string',
       minutes: 'string',
       seconds: 'string',
       timeCreated: 'float',
@@ -21,7 +21,7 @@ export class MediaEdited extends Realm.Object<MediaEdited> {
     name: 'MediaEdited',
     properties: {
       id: {type: 'string', default: generateId()},
-      uri: 'string',
+      name: 'string',
       minutes: 'string',
       seconds: 'string',
       timeCreated: 'float',
